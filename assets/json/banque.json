@@ -1,0 +1,130 @@
+{
+    "hommes": [
+        {
+            "ref": "",
+            "title": "",
+            "subTitle": "",
+            "imgSrc": "",
+            "imgAlt": "",
+            "class": ""
+        },
+        {
+            "ref": "",
+            "title": "",
+            "subTitle": "",
+            "imgSrc": "",
+            "imgAlt": "",
+            "class": ""
+        },
+        {
+            "ref": "",
+            "title": "",
+            "subTitle": "",
+            "imgSrc": "",
+            "imgAlt": "",
+            "class": ""
+        },
+                {
+            "ref": "",
+            "title": "",
+            "subTitle": "",
+            "imgSrc": "",
+            "imgAlt": "",
+            "class": ""
+        },
+        {
+            "ref": "",
+            "title": "",
+            "subTitle": "",
+            "imgSrc": "",
+            "imgAlt": "",
+            "class": ""
+        }
+    ],
+
+    "femmes": [
+        {
+            "ref": "",
+            "title": "",
+            "subTitle": "",
+            "imgSrc": "",
+            "imgAlt": "",
+            "class": ""
+        },
+        {
+            "ref": "",
+            "title": "",
+            "subTitle": "",
+            "imgSrc": "",
+            "imgAlt": "",
+            "class": ""
+        },
+        {
+            "ref": "",
+            "title": "",
+            "subTitle": "",
+            "imgSrc": "",
+            "imgAlt": "",
+            "class": ""
+        },
+                {
+            "ref": "",
+            "title": "",
+            "subTitle": "",
+            "imgSrc": "",
+            "imgAlt": "",
+            "class": ""
+        },
+        {
+            "ref": "",
+            "title": "",
+            "subTitle": "",
+            "imgSrc": "",
+            "imgAlt": "",
+            "class": ""
+        }
+    ],
+
+    "enfants": [
+        {
+            "ref": "",
+            "title": "",
+            "subTitle": "",
+            "imgSrc": "",
+            "imgAlt": "",
+            "class": ""
+        },
+        {
+            "ref": "",
+            "title": "",
+            "subTitle": "",
+            "imgSrc": "",
+            "imgAlt": "",
+            "class": ""
+        },
+        {
+            "ref": "",
+            "title": "",
+            "subTitle": "",
+            "imgSrc": "",
+            "imgAlt": "",
+            "class": ""
+        },
+                {
+            "ref": "",
+            "title": "",
+            "subTitle": "",
+            "imgSrc": "",
+            "imgAlt": "",
+            "class": ""
+        },
+        {
+            "ref": "",
+            "title": "",
+            "subTitle": "",
+            "imgSrc": "",
+            "imgAlt": "",
+            "class": ""
+        }
+    ]
+}
