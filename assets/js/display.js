@@ -26,7 +26,7 @@ d1.onclick = () => {
                             <span class="category">${mens[i].category}
                         <p class="card-text">${mens[i].subTitle}</p>
                         <span class="price">${mens[i].price}</span>
-                        <a href="#" class="btn btn-primary">Ajouter au panier</a>
+                        <a href="#" class="add${i} btn btn-primary">Ajouter au panier</a>
                     </div>
                 </div>
             </div>`;
@@ -59,7 +59,7 @@ d2.onclick = () => {
                             <span class="category">${womens[i].category}
                         <p class="card-text">${womens[i].subTitle}</p>
                         <span class="price">${womens[i].price}</span>
-                        <a href="#" class="btn btn-primary">Ajouter au panier</a>
+                        <a href="#" class="add btn btn-primary">Ajouter au panier</a>
                     </div>
                 </div>
             </div>`;
@@ -92,7 +92,7 @@ d3.onclick = () => {
                             <span class="category">${kids[i].category}
                         <p class="card-text">${kids[i].subTitle}</p>
                         <span class="price">${kids[i].price}</span>
-                        <a href="#" class="btn btn-primary">Ajouter au panier</a>
+                        <a href="#" class="add btn btn-primary">Ajouter au panier</a>
                     </div>
                 </div>
             </div>`;
