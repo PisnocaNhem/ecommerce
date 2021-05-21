@@ -3,7 +3,6 @@ var add = document.querySelectorAll('.add');
 
 add.forEach(element => {
     element.onclick = () => {
-        var id = element.data-id;
-        modalBody.innerHTML = id
+        modalBody.innerHTML = element.id;
     }
 });

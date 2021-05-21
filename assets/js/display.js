@@ -13,7 +13,6 @@ d1.onclick = () => {
     .then(response => response.json())
     .then(data => {
         const mens = data.gender[0];
-        console.log(mens.mens)
         for (let i=0; i<mens.length; i++) {
             let card = 
             `<div class="col-12 col-lg-3">
@@ -26,7 +25,7 @@ d1.onclick = () => {
                             <span class="category">${mens[i].category}
                         <p class="card-text">${mens[i].subTitle}</p>
                         <span class="price">${mens[i].price}</span>
-                        <button class="add btn btn-primary" data-id="${mens[i].ref}">Ajouter au panier</button>
+                        <button id="${i}" class="add btn btn-primary">Ajouter au panier</button>
                     </div>
                 </div>
             </div>`;
@@ -37,6 +36,13 @@ d1.onclick = () => {
     .catch(function(err) {
         console.log('Fetch Error :-S', err);
     })
+
+    const modalBody = document.querySelector('.modal-body');
+    var add = document.querySelectorAll('.add');
+
+    add.forEach(element.onclick = () => {
+        modalBody.innerHTML = element.id;
+    });
 }
 
 d2.onclick = () => {
