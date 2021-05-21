@@ -16,16 +16,18 @@ d1.onclick = () => {
         const mens = data.mens;
         for (let i=0; i<mens.length; i++) {
             let card = 
-            `<div class="col-12 col-lg-3 card">
-                <img src="${mens[i].imgSrc}" class="card-img-top" alt="${mens[i].imgAlt}">
-                <div class="card-body">
-                    <h5 class="card-title">${mens[i].title}</h5>
-                    <div class="d-flex">
-                        <h6>${mens[i].ref}</h6>
-                        <span class="ref">${mens[i].ref}
-                    <p class="card-text">${mens[i].subTitle}</p>
-                    <span class="price">${mens[i].price}</span>
-                    <a href="#" class="btn btn-primary">Ajouter au panier</a>
+            `<div class="col-12 col-lg-3">
+                <div class="card">
+                    <img src="${mens[i].imgSrc}" class="card-img-top" alt="${mens[i].imgAlt}">
+                    <div class="card-body">
+                        <h5 class="card-title">${mens[i].title}</h5>
+                        <div class="d-flex">
+                            <h6>${mens[i].ref}</h6>
+                            <span class="category">${mens[i].category}
+                        <p class="card-text">${mens[i].subTitle}</p>
+                        <span class="price">${mens[i].price}</span>
+                        <a href="#" class="btn btn-primary">Ajouter au panier</a>
+                    </div>
                 </div>
             </div>`;
             men.innerHTML = men.innerHTML + card;
@@ -47,16 +49,18 @@ d2.onclick = () => {
         const womens = data.womens;
         for (let i=0; i<womens.length; i++) {
             let card = 
-            `<div class="col-12 col-lg-3 card">
-                <img src="${womens[i].imgSrc}" class="card-img-top" alt="${womens[i].imgAlt}">
-                <div class="card-body">
-                    <h5 class="card-title">${womens[i].title}</h5>
-                    <div class="d-flex">
-                        <h6>${womens[i].ref}</h6>
-                        <span class="ref">${womens[i].ref}
-                    <p class="card-text">${womens[i].subTitle}</p>
-                    <span class="price">${womens[i].price}</span>
-                    <a href="#" class="btn btn-primary">Ajouter au panier</a>
+            `<div class="col-12 col-lg-3">
+                <div class="card">
+                    <img src="${womens[i].imgSrc}" class="card-img-top" alt="${womens[i].imgAlt}">
+                    <div class="card-body">
+                        <h5 class="card-title">${womens[i].title}</h5>
+                        <div class="d-flex">
+                            <h6>${womens[i].ref}</h6>
+                            <span class="category">${womens[i].category}
+                        <p class="card-text">${womens[i].subTitle}</p>
+                        <span class="price">${womens[i].price}</span>
+                        <a href="#" class="btn btn-primary">Ajouter au panier</a>
+                    </div>
                 </div>
             </div>`;
             women.innerHTML = women.innerHTML + card;
@@ -78,16 +82,18 @@ d3.onclick = () => {
         const kids = data.kids;
         for (let i=0; i<kids.length; i++) {
             let card = 
-            `<div class="col-12 col-lg-3 card">
-                <img src="${kids[i].imgSrc}" class="card-img-top" alt="${kids[i].imgAlt}">
-                <div class="card-body">
-                    <h5 class="card-title">${kids[i].title}</h5>
-                    <div class="d-flex">
-                        <h6>${kids[i].ref}</h6>
-                        <span class="ref">${kids[i].ref}
-                    <p class="card-text">${kids[i].subTitle}</p>
-                    <span class="price">${kids[i].price}</span>
-                    <a href="#" class="btn btn-primary">Ajouter au panier</a>
+            `<div class="col-12 col-lg-3">
+                <div class="card">
+                    <img src="${kids[i].imgSrc}" class="card-img-top" alt="${kids[i].imgAlt}">
+                    <div class="card-body">
+                        <h5 class="card-title">${kids[i].title}</h5>
+                        <div class="d-flex">
+                            <h6>${kids[i].ref}</h6>
+                            <span class="category">${kids[i].category}
+                        <p class="card-text">${kids[i].subTitle}</p>
+                        <span class="price">${kids[i].price}</span>
+                        <a href="#" class="btn btn-primary">Ajouter au panier</a>
+                    </div>
                 </div>
             </div>`;
             kid.innerHTML = kid.innerHTML + card;
