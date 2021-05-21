@@ -1,5 +1,5 @@
 {
-    "hommes": [
+    "mens": [
         {
             "ref": "",
             "title": "",
@@ -42,7 +42,7 @@
         }
     ],
 
-    "femmes": [
+    "womens": [
         {
             "ref": "",
             "title": "",
@@ -85,7 +85,7 @@
         }
     ],
 
-    "enfants": [
+    "kids": [
         {
             "ref": "",
             "title": "",
