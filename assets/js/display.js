@@ -1,4 +1,3 @@
-const home = document.querySelector('#home');
 const men = document.querySelector('#mens');
 const women = document.querySelector('#womens');
 const kid = document.querySelector('#kids');
@@ -13,12 +12,13 @@ d1.onclick = () => {
     fetch('/assets/json/banque.json')
     .then(response => response.json())
     .then(data => {
-        const mens = data.mens;
+        const mens = data.gender[0];
+        console.log(mens.mens)
         for (let i=0; i<mens.length; i++) {
             let card = 
             `<div class="col-12 col-lg-3">
                 <div class="card">
-                    <img src="${mens[i].imgSrc}" class="card-img-top" alt="${mens[i].imgAlt}">
+                    <img src="${mens[i].imgSrc}" class="card-img-top" alt="${mens[i].title}">
                     <div class="card-body">
                         <h5 class="card-title">${mens[i].title}</h5>
                         <div class="d-flex">
@@ -26,7 +26,7 @@ d1.onclick = () => {
                             <span class="category">${mens[i].category}
                         <p class="card-text">${mens[i].subTitle}</p>
                         <span class="price">${mens[i].price}</span>
-                        <a href="#" class="add${i} btn btn-primary">Ajouter au panier</a>
+                        <button class="add btn btn-primary" data-id="${mens[i].ref}">Ajouter au panier</button>
                     </div>
                 </div>
             </div>`;
@@ -46,7 +46,7 @@ d2.onclick = () => {
     fetch('/assets/json/banque.json')
     .then(response => response.json())
     .then(data => {
-        const womens = data.womens;
+        const womens = data.gender[1];
         for (let i=0; i<womens.length; i++) {
             let card = 
             `<div class="col-12 col-lg-3">
@@ -79,7 +79,7 @@ d3.onclick = () => {
     fetch('/assets/json/banque.json')
     .then(response => response.json())
     .then(data => {
-        const kids = data.kids;
+        const kids = data.gender[2];
         for (let i=0; i<kids.length; i++) {
             let card = 
             `<div class="col-12 col-lg-3">

@@ -1,145 +1,129 @@
 {
-    "mens": [
-        {
-            "ref": "",
-            "title": "",
-            "subTitle": "",
-            "imgSrc": "",
-            "imgAlt": "",
-            "price": "",
-            "category": ""
-        },
-        {
-            "ref": "",
-            "title": "",
-            "subTitle": "",
-            "imgSrc": "",
-            "imgAlt": "",
-            "price": "",
-            "category": ""
-        },
-        {
-            "ref": "",
-            "title": "",
-            "subTitle": "",
-            "imgSrc": "",
-            "imgAlt": "",
-            "price": "",
-            "category": ""
-        },
-        {
-            "ref": "",
-            "title": "",
-            "subTitle": "",
-            "imgSrc": "",
-            "imgAlt": "",
-            "price": "",
-            "category": ""
-        },
-        {
-            "ref": "",
-            "title": "",
-            "subTitle": "",
-            "imgSrc": "",
-            "imgAlt": "",
-            "price": "",
-            "category": ""
-        }
-    ],
+    "gender": [
+        [{
+                "ref": "",
+                "title": "",
+                "subTitle": "",
+                "imgSrc": "",
+                "price": "",
+                "category": ""
+            },
+            {
+                "ref": "",
+                "title": "",
+                "subTitle": "",
+                "imgSrc": "",
+                "price": "",
+                "category": ""
+            },
+            {
+                "ref": "",
+                "title": "",
+                "subTitle": "",
+                "imgSrc": "",
+                "price": "",
+                "category": ""
+            },
+            {
+                "ref": "",
+                "title": "",
+                "subTitle": "",
+                "imgSrc": "",
+                "price": "",
+                "category": ""
+            },
+            {
+                "ref": "",
+                "title": "",
+                "subTitle": "",
+                "imgSrc": "",
+                "price": "",
+                "category": ""
+            }
+        ],
 
-    "womens": [
-        {
-            "ref": "",
-            "title": "",
-            "subTitle": "",
-            "imgSrc": "",
-            "imgAlt": "",
-            "price": "",
-            "category": ""
-        },
-        {
-            "ref": "",
-            "title": "",
-            "subTitle": "",
-            "imgSrc": "",
-            "imgAlt": "",
-            "price": "",
-            "category": ""
-        },
-        {
-            "ref": "",
-            "title": "",
-            "subTitle": "",
-            "imgSrc": "",
-            "imgAlt": "",
-            "price": "",
-            "category": ""
-        },
-                {
-            "ref": "",
-            "title": "",
-            "subTitle": "",
-            "imgSrc": "",
-            "imgAlt": "",
-            "price": "",
-            "category": ""
-        },
-        {
-            "ref": "",
-            "title": "",
-            "subTitle": "",
-            "imgSrc": "",
-            "imgAlt": "",
-            "price": "",
-            "category": ""
-        }
-    ],
+        [{
+                "ref": "",
+                "title": "",
+                "subTitle": "",
+                "imgSrc": "",
+                "price": "",
+                "category": ""
+            },
+            {
+                "ref": "",
+                "title": "",
+                "subTitle": "",
+                "imgSrc": "",
+                "price": "",
+                "category": ""
+            },
+            {
+                "ref": "",
+                "title": "",
+                "subTitle": "",
+                "imgSrc": "",
+                "price": "",
+                "category": ""
+            },
+            {
+                "ref": "",
+                "title": "",
+                "subTitle": "",
+                "imgSrc": "",
+                "price": "",
+                "category": ""
+            },
+            {
+                "ref": "",
+                "title": "",
+                "subTitle": "",
+                "imgSrc": "",
+                "price": "",
+                "category": ""
+            }
+        ],
 
-    "kids": [
-        {
-            "ref": "",
-            "title": "",
-            "subTitle": "",
-            "imgSrc": "",
-            "imgAlt": "",
-            "price": "",
-            "category": ""
-        },
-        {
-            "ref": "",
-            "title": "",
-            "subTitle": "",
-            "imgSrc": "",
-            "imgAlt": "",
-            "price": "",
-            "category": ""
-        },
-        {
-            "ref": "",
-            "title": "",
-            "subTitle": "",
-            "imgSrc": "",
-            "imgAlt": "",
-            "price": "",
-            "category": ""
-        },
-                {
-            "ref": "",
-            "title": "",
-            "subTitle": "",
-            "imgSrc": "",
-            "imgAlt": "",
-            "price": "",
-            "category": ""
-        },
-        {
-            "ref": "",
-            "title": "",
-            "subTitle": "",
-            "imgSrc": "",
-            "imgAlt": "",
-            "price": "",
-            "category": ""
-        }
+        [{
+                "ref": "",
+                "title": "",
+                "subTitle": "",
+                "imgSrc": "",
+                "price": "",
+                "category": ""
+            },
+            {
+                "ref": "",
+                "title": "",
+                "subTitle": "",
+                "imgSrc": "",
+                "price": "",
+                "category": ""
+            },
+            {
+                "ref": "",
+                "title": "",
+                "subTitle": "",
+                "imgSrc": "",
+                "price": "",
+                "category": ""
+            },
+            {
+                "ref": "",
+                "title": "",
+                "subTitle": "",
+                "imgSrc": "",
+                "price": "",
+                "category": ""
+            },
+            {
+                "ref": "",
+                "title": "",
+                "subTitle": "",
+                "imgSrc": "",
+                "price": "",
+                "category": ""
+            }
+        ]
     ]
 }
