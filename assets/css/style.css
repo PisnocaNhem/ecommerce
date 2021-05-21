@@ -6,3 +6,8 @@
 
 
 /* Fin Ludo */
+#footer{
+    background-color: aqua;
+    background-size: cover;
+    height: 10rem;
+}
