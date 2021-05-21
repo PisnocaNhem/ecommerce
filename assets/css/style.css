@@ -2,7 +2,13 @@
     width: 18rem
 }
 /* Debut Ludo */
-
-
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.mensDiv{
+    height: 300px;
+    background-color: blue;
+}
 
 /* Fin Ludo */
