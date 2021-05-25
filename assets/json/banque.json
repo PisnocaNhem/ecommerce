@@ -1,0 +1,145 @@
+{
+    "mens": [
+        {
+            "ref": "",
+            "title": "",
+            "subTitle": "",
+            "imgSrc": "",
+            "imgAlt": "",
+            "price": "",
+            "category": ""
+        },
+        {
+            "ref": "",
+            "title": "",
+            "subTitle": "",
+            "imgSrc": "",
+            "imgAlt": "",
+            "price": "",
+            "category": ""
+        },
+        {
+            "ref": "",
+            "title": "",
+            "subTitle": "",
+            "imgSrc": "",
+            "imgAlt": "",
+            "price": "",
+            "category": ""
+        },
+        {
+            "ref": "",
+            "title": "",
+            "subTitle": "",
+            "imgSrc": "",
+            "imgAlt": "",
+            "price": "",
+            "category": ""
+        },
+        {
+            "ref": "",
+            "title": "",
+            "subTitle": "",
+            "imgSrc": "",
+            "imgAlt": "",
+            "price": "",
+            "category": ""
+        }
+    ],
+
+    "womens": [
+        {
+            "ref": "",
+            "title": "",
+            "subTitle": "",
+            "imgSrc": "",
+            "imgAlt": "",
+            "price": "",
+            "category": ""
+        },
+        {
+            "ref": "",
+            "title": "",
+            "subTitle": "",
+            "imgSrc": "",
+            "imgAlt": "",
+            "price": "",
+            "category": ""
+        },
+        {
+            "ref": "",
+            "title": "",
+            "subTitle": "",
+            "imgSrc": "",
+            "imgAlt": "",
+            "price": "",
+            "category": ""
+        },
+                {
+            "ref": "",
+            "title": "",
+            "subTitle": "",
+            "imgSrc": "",
+            "imgAlt": "",
+            "price": "",
+            "category": ""
+        },
+        {
+            "ref": "",
+            "title": "",
+            "subTitle": "",
+            "imgSrc": "",
+            "imgAlt": "",
+            "price": "",
+            "category": ""
+        }
+    ],
+
+    "kids": [
+        {
+            "ref": "",
+            "title": "",
+            "subTitle": "",
+            "imgSrc": "",
+            "imgAlt": "",
+            "price": "",
+            "category": ""
+        },
+        {
+            "ref": "",
+            "title": "",
+            "subTitle": "",
+            "imgSrc": "",
+            "imgAlt": "",
+            "price": "",
+            "category": ""
+        },
+        {
+            "ref": "",
+            "title": "",
+            "subTitle": "",
+            "imgSrc": "",
+            "imgAlt": "",
+            "price": "",
+            "category": ""
+        },
+                {
+            "ref": "",
+            "title": "",
+            "subTitle": "",
+            "imgSrc": "",
+            "imgAlt": "",
+            "price": "",
+            "category": ""
+        },
+        {
+            "ref": "",
+            "title": "",
+            "subTitle": "",
+            "imgSrc": "",
+            "imgAlt": "",
+            "price": "",
+            "category": ""
+        }
+    ]
+}
