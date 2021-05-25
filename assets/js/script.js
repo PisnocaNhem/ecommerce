@@ -1,11 +1,14 @@
 // Fonction d'Affichage:
 const men = document.querySelector('#mens');
+const men2 = document.querySelector('#mens2');
 const women = document.querySelector('#womens');
+const women2 = document.querySelector('#womens2');
 const kid = document.querySelector('#kids');
+const kid2 = document.querySelector('#kids2');
 const display = document.querySelectorAll('.display');
-const d1 = document.querySelector('#d-1');
-const d2 = document.querySelector('#d-2');
-const d3 = document.querySelector('#d-3');
+const d1 = document.querySelectorAll('.d-1');
+const d2 = document.querySelectorAll('.d-2');
+const d3 = document.querySelectorAll('.d-3');
 
 const pushCard = (product, i) => {
     let card =
@@ -19,7 +22,7 @@ const pushCard = (product, i) => {
                     <span class="category">${product[i].category}
                 <p class="card-text">${product[i].subTitle}</p>
                 <span class="price">${product[i].price}€</span>
-                <button id="add${i}" class="add btn btn-primary">Ajouter au panier</button>
+                <button class="add btn btn-primary" data-ref="${product[i].ref}">Ajouter au panier</button>
             </div>
         </div>
     </div>`;
@@ -30,41 +33,60 @@ fetch('/assets/json/banque.json')
     .then(response => response.json())
     .then(data => {
         display.forEach(element => {
+            // Chargement d'une section.
             element.onclick = (event) => {
                 switch (event.target.id) {
                     case 'd-1': {
-                        d1.classList = "d-none";
-                        women.classList = "d-none";
-                        kid.classList = "d-none";
+                        men.classList.remove('d-none')
+                        women.classList.add('d-none');
+                        kid.classList.add('d-none');
                         product = data.gender[0];
+                        men2.innerHTML = "";
                         for (let i = 0; i < product.length; i++) {
                             let card = pushCard(product, i);
-                            men.innerHTML = men.innerHTML + card;
+                            men2.innerHTML = men2.innerHTML + card;
                         }
                     };
                         break;
                     case 'd-2': {
-                        d2.classList = "d-none";
-                        men.classList = "d-none";
-                        kid.classList = "d-none";
+                        men.classList.add('d-none')
+                        women.classList.remove('d-none');
+                        kid.classList.add('d-none');
                         product = data.gender[1];
+                        women2.innerHTML = "";
                         for (let i = 0; i < product.length; i++) {
                             let card = pushCard(product, i);
-                            women.innerHTML = women.innerHTML + card;
+                            women2.innerHTML = women2.innerHTML + card;
                         }
                     };
                         break;
                     case 'd-3': {
-                        d3.classList = "d-none";
-                        men.classList = "d-none";
-                        women.classList = "d-none";
+                        men.classList.add('d-none')
+                        women.classList.add('d-none');
+                        kid.classList.remove('d-none');
                         product = data.gender[2];
+                        kid2.innerHTML = "";
                         for (let i = 0; i < product.length; i++) {
                             let card = pushCard(product, i);
-                            kid.innerHTML = kid.innerHTML + card;
+                            kid2.innerHTML = kid2.innerHTML + card;
                         }
-                    };
+                    }
                 }
+                // Au clic sur un bouton "Ajouter au panier".
+                const add = document.querySelectorAll('.add');
+                var refArray = [];
+                add.forEach(element => {
+                    element.onclick = (event) => {
+                        if (!localStorage.getItem('refLS')) {
+                            refArray.push(event.target.dataset.ref);
+                            localStorage.setItem('refLS', JSON.stringify(refArray));
+                        } else {
+                            refArray = JSON.parse(localStorage.getItem('refLS'));
+                            refArray.push(event.target.dataset.ref);
+                            localStorage.setItem('refLS', JSON.stringify(refArray));
+                        }
+                    }
+                })
             }
         })   
     })
@@ -76,4 +98,9 @@ fetch('/assets/json/banque.json')
 
 // Ajouter un produit au Panier:
 
+
 // Fin Ajouter un produit au Panier
+
+// Display Panier:
+
+// Fin Display Panier
