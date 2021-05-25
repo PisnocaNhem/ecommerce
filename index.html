@@ -7,27 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/media.css">
+    <link rel="stylesheet" href="/assets/css/media.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <title>Sneakers Shop</title>
 </head>
 
-<!-- Bugs:-Les cols ne se font pas pour le display. -->
 
 <body class="container-fluid">
     <header>
-
-    </header>
-
-<!-- Debut Ludo -->
-        
-<!-- Fin Ludo -->
-
-
-    <main>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Sneakers Shop</a>
+                <a class="navbar-brand " href="#">Sneakers Shop</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -36,43 +26,66 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Hommes</a>
+                            <a class="nav-link active display" id="d-1" href="#">Hommes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Femmes</a>
+                            <a class="nav-link active display" id="d-2" href="#">Femmes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Enfants</a>
+                            <a class="nav-link active display" id="d-3" href="#">Enfants</a>
                         </li>
                     </ul>
-                    <!-- <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form> -->
                 </div>
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <img src="" alt="Panier">
                 </button>
             </div>
         </nav>
+    </header>
+
+
+
 
         <div id="home">
-            <section id="mens" class="row">
-                <button id="d-1">Voir +</button>
-            </section>
-
-            <section id="womens" class="row">
-                <button id="d-2">Voir +</button> 
-            </section>
-
-            <section id="kids" class="row">
-                <button id="d-3">Voir +</button>
-            </section>
+            <div>
+                <section id="mens" class="row mt-5">
+                    <div class="col-12 mensDiv d-flex">
+                        <div class="col-6 m-5">
+                            <h2>Créateurs d'Optimisme<br>
+                                Un style pour bouger tout l'été</h2>
+                        </div>
+                        <div class="col-6 imgMens m-0 p-0"></div>
+                    </div>
+                </section>
+            </div>
+            <div>
+                <section id="womens" class="row mt-5">
+                    <div class="col-12 womensDiv d-flex">
+                        <div class="col-6 m-5">
+                            <h2>Un été de taille<br>
+                                La mode selon vous, pour vous</h2>
+                        </div>
+                        <div class="col-6 imgWomens m-0 p-0"></div>
+                    </div>
+                </section>
+            </div>
+            <div>
+                <section id="womens" class="row mt-5">
+                    <div class="col-12 kidsDiv d-flex">
+                        <div class="col-6 m-5">
+                            <h2>Ça vient de tomber<br>
+                                Sneakers du moment</h2>
+                        </div>
+                        <div class="col-6 imgKids m-0 p-0"></div>
+                    </div>
+                </section>
+            </div>
         </div>
+
     </main>
     <!-- debut micka -->
-    <footer>
-        <div class="container-fluid">
+    
+        <footer>
             <div id="footer"class="row bg-dark">
                 <div class="col-3 mt-3">
                     <p>CGV </p>
@@ -96,7 +109,7 @@
                     <a href="https://www.instagram.com/lamanuformation/?hl=fr" target="_blank"><img src="https://img.icons8.com/office/40/000000/instagram-new.png"/></a>               
                 </div>
             </div>
-        </div>
+        
     </footer>
     <!-- fin micka  -->
 
@@ -107,9 +120,7 @@
                     <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                    ...
-                </div>
+                <div class="modal-body"></div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Payer</button>
@@ -118,9 +129,12 @@
         </div>
     </div>
 
+
+
+
+
+
     <script src="assets/js/script.js"></script>
-    <script src="assets/js/display.js"></script>
-    <script src="assets/js/cart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>

@@ -1,18 +1,39 @@
 .card {
-    width: 18rem
+    width: 18rem;
 }
 /* Debut Ludo */
-
-
-
-/* Fin Ludo */
-
-
-/* debut mic */
-
+html, body{
+    height: 100vh;
+}
 #footer{
-    color: white;
-    
+    background-color: #212529;
+    color: whitesmoke;
+    padding-top: 5px;
+}
+.mensDiv{
+    height: 300px;
+    background-color: #F2AF12;
+}
+.imgMens{
+    background-image: url(/assets/img/imgmens.jpg);
+    background-size: cover;
+
+}
+.womensDiv{
+    height: 300px;
+    background-color: #c74874;
+}
+.imgWomens{
+    background-image: url(/assets/img/imgwomens.jpg);
+    background-size: cover;
+}
+.kidsDiv{
+    height: 300px;
+    background-color: #DCEE6B;
+}
+.imgKids{
+    background-image: url(/assets/img/imgkids.jpg);
+    background-size: cover;
 }
 
-/* fin mic */
+/* fin ludo */
