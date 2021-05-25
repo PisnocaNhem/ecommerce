@@ -1,22 +1,30 @@
-.card {
-    width: 18rem
-}
 /* Debut Ludo */
 html, body{
-    height: 100%;
-    width: 100%;
+    height: 100vh;
 }
 .mensDiv{
     height: 300px;
-    background-color: blue;
+    background-color: #F2AF12;
+}
+.imgMens{
+    background-image: url(/assets/img/imgmens.jpg);
+    background-size: cover;
+
 }
 .womensDiv{
     height: 300px;
-    background-color: pink;
+    background-color: #c74874;
+}
+.imgWomens{
+    background-image: url(/assets/img/imgwomens.jpg);
+    background-size: cover;
 }
 .kidsDiv{
     height: 300px;
-    background-color: yellow;
+    background-color: #DCEE6B;
 }
-
+.imgKids{
+    background-image: url(/assets/img/imgkids.jpg);
+    background-size: cover;
+}
 /* Fin Ludo */
