@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -26,135 +27,127 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active display" id="d-1" href="#">Hommes</a>
+                            <a id= "d-1" class="nav-link active display">Hommes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active display" id="d-2" href="#">Femmes</a>
+                            <a id= "d-2" class="nav-link active display">Femmes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active display" id="d-3" href="#">Enfants</a>
+                            <a id= "d-3" class="nav-link active display">Enfants</a>
                         </li>
                     </ul>
                 </div>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button id="cart" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <img src="" alt="Panier">
                 </button>
             </div>
         </nav>
     </header>
 
-
-
-
-    <div id="home">
-        <div class="slide m-5">
-        <!-- Slideshow container -->
-        <div class="slideshow-container">
-
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="/assets/img/BDDimg/enfant/e1.png" style="width:60%">
-                
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="/assets/img/BDDimg/femme/f1.png" style="width:60%">
-                
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="/assets/img/BDDimg/homme/h1.png" style="width:60%">
-                
-            </div>
-
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <main>
+        <div id="home">
+            <div class="slide m-5">
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
         
-    </div>
-        <br>
-
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-    </div>
-
-
-        <!-- Debut Ludo haut -->
-
-        <!-- Fin Ludo haut -->
-        <div>
-            <section id="mens" class="row mt">
-                <div class="col-12 mensDiv d-flex">
-                    <div class="col-6 m-5">
-                        <h2>Créateurs d'Optimisme<br>
-                            Un style pour bouger tout l'été</h2>
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="/assets/img/BDDimg/enfant/e1.png" style="width:60%">
+                        
                     </div>
-                    <div class="col-6 imgMens m-0 p-0"></div>
-                </div>
-            </section>
-        </div>
-        <div>
-            <section id="womens" class="row mt-5">
-                <div class="col-12 womensDiv d-flex">
-                    <div class="col-6 m-5">
-                        <h2>Un été de taille<br>
-                            La mode selon vous, pour vous</h2>
+        
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="/assets/img/BDDimg/femme/f1.png" style="width:60%">
+                        
                     </div>
-                    <div class="col-6 imgWomens m-0 p-0"></div>
-                </div>
-            </section>
-        </div>
-        <div>
-            <section id="womens" class="row mt-5">
-                <div class="col-12 kidsDiv d-flex">
-                    <div class="col-6 m-5">
-                        <h2>Ça vient de tomber<br>
-                            Sneakers du moment</h2>
+        
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="/assets/img/BDDimg/homme/h1.png" style="width:60%">
+                        
                     </div>
-                    <div class="col-6 imgKids m-0 p-0"></div>
+        
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+            </div>
+                <br>
+        
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
-            </section>
+            </div>
+            <div>
+                <section id="mens" class="display row mt-5">
+                    <div class="col-12 mensDiv d-flex">
+                        <div class="col-6 p-5">
+                            <h2>Créateurs d'Optimisme<br>
+                                Un style pour bouger tout l'été</h2>
+                        </div>
+                        <div class="d-flex col-6 imgMens m-0 p-0"></div>
+                    </div>
+                    <div id="mens2" class="d-flex flex-wrap"></div>
+                </section>
+            </div>
+            <div>
+                <section id="womens" class="display row mt-5">
+                    <div class="col-12 womensDiv d-flex">
+                        <div class="col-6 p-5">
+                            <h2>Un été de taille<br>
+                                La mode selon vous, pour vous</h2>
+                        </div>
+                        <div class="d-flex col-6 imgWomens m-0 p-0"></div>
+                    </div>
+                    <div id="womens2" class="d-flex flex-wrap"></div>
+                </section>
+            </div>
+            <div>
+                <section id="kids" class="display row my-5">
+                    <div class="col-12 kidsDiv d-flex">
+                        <div class="col-6 p-5">
+                            <h2>Ça vient de tomber<br>
+                                Sneakers du moment</h2>
+                        </div>
+                        <div class="d-flex col-6 imgKids m-0 p-0"></div>
+                    </div>
+                    <div id="kids2" class="d-flex flex-wrap"></div>
+                </section>
+            </div>
         </div>
-    </div>
-
     </main>
     <!-- debut micka -->
+    
+        <footer>
+            <div id="footer"class="row bg-dark">
+                <div class="col-3 mt-3">
+                    <p>CGV </p>
+                    <p>CGU</p>
+                    <p>Mentions Légales</p>
+                </div>
+                <div class="col-3 text-center mt-3">
+                    <p>Mode de livraison</p>
+                    <a href="https://www.chronopost.fr/fr#/step-home" target="_blank"><img src="https://img.icons8.com/ultraviolet/40/000000/delivery--v1.png"/></a>
+                    
+                </div>
+                <div class="col-3 text-center mt-3">
+                    <p class="">Mode de paiement</p>
+                    <img src="https://img.icons8.com/ultraviolet/40/000000/bank-card-back-side.png"/>
+                    <img src="https://img.icons8.com/office/40/000000/bank-card-back-side.png"/>
 
-    <footer>
-        <div id="footer" class="row bg-dark">
-            <div class="col-3 mt-3">
-                <p>CGV </p>
-                <p>CGU</p>
-                <p>Mentions Légales</p>
+                </div>
+                <div class="col-3 text-end mt-3">
+                    <p>réseaux sociaux</p>
+                    <a href="https://fr-fr.facebook.com/LaManuFormation" target="_blank"><img src="https://img.icons8.com/office/40/000000/facebook.png"/></a>
+                    <a href="https://www.instagram.com/lamanuformation/?hl=fr" target="_blank"><img src="https://img.icons8.com/office/40/000000/instagram-new.png"/></a>               
+                </div>
             </div>
-            <div class="col-3 text-center mt-3">
-                <p>Mode de livraison</p>
-                <a href="https://www.chronopost.fr/fr#/step-home" target="_blank"><img
-                        src="https://img.icons8.com/ultraviolet/40/000000/delivery--v1.png" /></a>
-
-            </div>
-            <div class="col-3 text-center mt-3">
-                <p class="">Mode de paiement</p>
-                <img src="https://img.icons8.com/ultraviolet/40/000000/bank-card-back-side.png" />
-                <img src="https://img.icons8.com/office/40/000000/bank-card-back-side.png" />
-
-            </div>
-            <div class="col-3 text-end mt-3">
-                <p>réseaux sociaux</p>
-                <a href="https://fr-fr.facebook.com/LaManuFormation" target="_blank"><img
-                        src="https://img.icons8.com/office/40/000000/facebook.png" /></a>
-                <a href="https://www.instagram.com/lamanuformation/?hl=fr" target="_blank"><img
-                        src="https://img.icons8.com/office/40/000000/instagram-new.png" /></a>
-            </div>
-        </div>
-
+        
     </footer>
     <!-- fin micka  -->
 
@@ -162,7 +155,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Panier</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body"></div>
@@ -173,10 +166,6 @@
             </div>
         </div>
     </div>
-
-
-
-
 
 
     <script src="assets/js/script.js"></script>
