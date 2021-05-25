@@ -1,43 +1,43 @@
 {
     "gender": [
         [{
-                "ref": "",
-                "title": "",
+                "ref": "1000",
+                "title": "Un Bon gros Toutou",
+                "subTitle": "De qualité",
+                "imgSrc": "assets/img/twix.png",
+                "price": "1000000000000000000",
+                "category": "Homme"
+            },
+            {
+                "ref": "1000",
+                "title": "Un Bon gros Toutou",
                 "subTitle": "",
-                "imgSrc": "",
-                "price": "",
+                "imgSrc": "assets/img/twix.png",
+                "price": "1000000000000000000",
                 "category": ""
             },
             {
-                "ref": "",
-                "title": "",
+                "ref": "1000",
+                "title": "Un Bon gros Toutou",
                 "subTitle": "",
-                "imgSrc": "",
-                "price": "",
+                "imgSrc": "assets/img/twix.png",
+                "price": "1000000000000000000",
                 "category": ""
             },
             {
-                "ref": "",
-                "title": "",
+                "ref": "1000",
+                "title": "Un Bon gros Toutou",
                 "subTitle": "",
-                "imgSrc": "",
-                "price": "",
+                "imgSrc": "assets/img/twix.png",
+                "price": "1000000000000000000",
                 "category": ""
             },
             {
-                "ref": "",
-                "title": "",
+                "ref": "1000",
+                "title": "Un Bon gros Toutou",
                 "subTitle": "",
-                "imgSrc": "",
-                "price": "",
-                "category": ""
-            },
-            {
-                "ref": "",
-                "title": "",
-                "subTitle": "",
-                "imgSrc": "",
-                "price": "",
+                "imgSrc": "assets/img/twix.png",
+                "price": "1000000000000000000",
                 "category": ""
             }
         ],
