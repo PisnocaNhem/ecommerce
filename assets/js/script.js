@@ -74,6 +74,8 @@ fetch('/assets/json/banque.json')
     })
 // Fin Fonction d'Affichage
 
-// Ajouter un produit au Panier:
+// Ajouter un produit au Panier mickaël
+
+
 
 // Fin Ajouter un produit au Panier
