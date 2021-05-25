@@ -1,3 +1,6 @@
+.card {
+    width: 18rem;
+}
 /* Debut Ludo */
 html, body{
     height: 100vh;
