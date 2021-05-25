@@ -1,145 +1,144 @@
 {
     "mens": [
         {
-            "ref": "",
-            "title": "",
-            "subTitle": "",
-            "imgSrc": "",
-            "imgAlt": "",
-            "price": "",
-            "category": ""
+            "ref": "001",
+            "title": "NikeTailleBasse",
+            "subTitle": "Nike1",
+            "imgSrc": "/assets/img/homme/h1.png",
+            "imgAlt": "Paire de chaussure homme taille basse",
+            "price": "2000",
+            "category": "Homme"
         },
         {
-            "ref": "",
-            "title": "",
-            "subTitle": "",
-            "imgSrc": "",
-            "imgAlt": "",
-            "price": "",
-            "category": ""
+            "ref": "002",
+            "title": "NikeTailleHaute",
+            "subTitle": "Nike2",
+            "imgSrc": "/assets/img/homme/h2.png",
+            "imgAlt": "Paire de chaussure homme taille haute",
+            "price": "3000",
+            "category": "Homme"
         },
         {
-            "ref": "",
-            "title": "",
-            "subTitle": "",
-            "imgSrc": "",
-            "imgAlt": "",
-            "price": "",
-            "category": ""
+            "ref": "003",
+            "title": "NikeTailleHaute",
+            "subTitle": "Nike1",
+            "imgSrc": "/assets/img/homme/h3.png",
+            "imgAlt": "Paire de chaussure homme taille Haute en couleur rouge",
+            "price": "3000",
+            "category": "Homme"
         },
         {
-            "ref": "",
-            "title": "",
-            "subTitle": "",
-            "imgSrc": "",
-            "imgAlt": "",
-            "price": "",
-            "category": ""
+            "ref": "004",
+            "title": "Retour vers le futur",
+            "subTitle": "Nike4",
+            "imgSrc": "/assets/img/homme/h4.png",
+            "imgAlt": "Repartez dans le futur chaussure auto laçante ",
+            "price": "23000",
+            "category": "Homme"
         },
         {
-            "ref": "",
-            "title": "",
-            "subTitle": "",
-            "imgSrc": "",
-            "imgAlt": "",
-            "price": "",
-            "category": ""
+            "ref": "005",
+            "title": "NikeTailleBasse",
+            "subTitle": "Nike5",
+            "imgSrc": "/assets/img/homme/h5.png",
+            "imgAlt": "Paire de chaussure homme taille basse en couleur noire",
+            "price": "300",
+            "category": "Homme"
         }
     ],
 
     "womens": [
         {
-            "ref": "",
-            "title": "",
-            "subTitle": "",
-            "imgSrc": "",
-            "imgAlt": "",
-            "price": "",
-            "category": ""
+            "ref": "006",
+            "title": "NikeTailleBasse",
+            "subTitle": "Nike6",
+            "imgSrc": "/assets/img/femme/f1.png",
+            "imgAlt": "Paire de chaussure femme couleur marron",
+            "price": "2000",
+            "category": "femme"
         },
         {
-            "ref": "",
-            "title": "",
-            "subTitle": "",
-            "imgSrc": "",
-            "imgAlt": "",
-            "price": "",
-            "category": ""
+            "ref": "007",
+            "title": "NikeTailleHaute",
+            "subTitle": "Nike7",
+            "imgSrc": "/assets/img/femme/f2.png",
+            "imgAlt": "Paire de chaussure femme taille basse multi couleur",
+            "price": "3000",
+            "category": "femme"
         },
         {
-            "ref": "",
-            "title": "",
-            "subTitle": "",
-            "imgSrc": "",
-            "imgAlt": "",
-            "price": "",
-            "category": ""
-        },
-                {
-            "ref": "",
-            "title": "",
-            "subTitle": "",
-            "imgSrc": "",
-            "imgAlt": "",
-            "price": "",
-            "category": ""
+            "ref": "008",
+            "title": "NikeTailleHaute",
+            "subTitle": "Nike8",
+            "imgSrc": "/assets/img/femme/f3.png",
+            "imgAlt": "Paire de chaussure femme taille mi haute en couleur",
+            "price": "3000",
+            "category": "femme"
         },
         {
-            "ref": "",
-            "title": "",
-            "subTitle": "",
-            "imgSrc": "",
-            "imgAlt": "",
-            "price": "",
-            "category": ""
+            "ref": "009",
+            "title": "Retour vers le futur",
+            "subTitle": "Nike9",
+            "imgSrc": "/assets/img/femme/f4.png",
+            "imgAlt": "Paire de chaussure femme taille basse en couleur rose",
+            "price": "23000",
+            "category": "femme"
+        },
+        {
+            "ref": "0010",
+            "title": "NikeTailleBasse",
+            "subTitle": "Nike10",
+            "imgSrc": "/assets/img/femme/f5.png",
+            "imgAlt": "Paire de chaussure femme taille basse en couleur blanche",
+            "price": "300",
+            "category": "femme"
         }
     ],
 
     "kids": [
         {
-            "ref": "",
-            "title": "",
-            "subTitle": "",
-            "imgSrc": "",
-            "imgAlt": "",
-            "price": "",
-            "category": ""
+            "ref": "011",
+            "title": "NikeTailleBasse",
+            "subTitle": "Nike11",
+            "imgSrc": "/assets/img/enfant/f1.png",
+            "imgAlt": "Paire de chaussure enfant couleur rose",
+            "price": "2000",
+            "category": "enfant"
         },
         {
-            "ref": "",
-            "title": "",
-            "subTitle": "",
-            "imgSrc": "",
-            "imgAlt": "",
-            "price": "",
-            "category": ""
+            "ref": "012",
+            "title": "NikeTailleHaute",
+            "subTitle": "Nike12",
+            "imgSrc": "/assets/img/enfant/f2.png",
+            "imgAlt": "Paire de chaussure enfant taille basse couelru noire",
+            "price": "3000",
+            "category": "enfant"
         },
         {
-            "ref": "",
-            "title": "",
-            "subTitle": "",
-            "imgSrc": "",
-            "imgAlt": "",
-            "price": "",
-            "category": ""
-        },
-                {
-            "ref": "",
-            "title": "",
-            "subTitle": "",
-            "imgSrc": "",
-            "imgAlt": "",
-            "price": "",
-            "category": ""
+            "ref": "013",
+            "title": "NikeTailleHaute",
+            "subTitle": "Nike13",
+            "imgSrc": "/assets/img/enfant/f3.png",
+            "imgAlt": "Paire de chaussure enfant taille basse couleur bleue",
+            "price": "3000",
+            "category": "enfant"
         },
         {
-            "ref": "",
-            "title": "",
-            "subTitle": "",
-            "imgSrc": "",
-            "imgAlt": "",
-            "price": "",
-            "category": ""
+            "ref": "014",
+            "title": "Retour vers le futur",
+            "subTitle": "Nike14",
+            "imgSrc": "/assets/img/enfant/f4.png",
+            "imgAlt": "Paire de chaussure enfant taille haute couleur blanche et grise",
+            "price": "23000",
+            "category": "enfant"
+        },
+        {
+            "ref": "0015",
+            "title": "NikeTailleBasse",
+            "subTitle": "Nike15",
+            "imgSrc": "/assets/img/enfant/f5.png",
+            "imgAlt": "Paire de chaussure enfant taille basse papillon",
+            "price": "300",
+            "category": "enfant"
         }
-    ]
-}
+    ],
