@@ -1,4 +1,3 @@
-// Fonction d'Affichage:
 const men = document.querySelector('#mens');
 const men2 = document.querySelector('#mens2');
 const women = document.querySelector('#womens');
@@ -88,19 +87,56 @@ fetch('/assets/json/banque.json')
                     }
                 })
             }
-        })   
+        })
+        // Display Panier:
+        var cart = document.querySelector('#cart');
+        const prod0 = data.gender[0];
+        const prod1 = data.gender[1];
+        const prod2 = data.gender[2];
+        const modalBody = document.querySelector('.modal-body');
+
+        const pushCartCard = (prod, i) => {
+            let cartCard =
+            `<div class="col-12">
+                <div class="card d-flex">
+                    <img src="${prod[i].imgSrc}" alt="${prod[i].title}">
+                    <div class="card-body">
+                        <h5 class="card-title">${prod[i].title}</h5>
+                        <div class="d-flex">
+                            <h6>${prod[i].ref}</h6>
+                            <span class="category">${prod[i].category}
+                        <p class="card-text">${prod[i].subTitle}</p>
+                        <span class="price">${prod[i].price}€</span>
+                        <button class="add btn btn-primary" data-ref="${prod[i].ref}">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>`;
+            return cartCard
+        }
+
+        cart.onclick = () => {
+            modalBody.innerHTML = "";
+            var itemCart = JSON.parse(localStorage.getItem('refLS'));
+            for (let i = 0; i < itemCart.length; i++) {
+                for (let j = 0; j < prod0.length; j++) {
+                    if (prod0[j].ref == itemCart[i]) {
+                        modalBody.innerHTML = modalBody.innerHTML + pushCartCard(prod0, j);
+                    }
+                }
+                for (let j = 0; j < prod1.length; j++) {
+                    if (prod1[j].ref == itemCart[i]) {
+                        modalBody.innerHTML = modalBody.innerHTML + pushCartCard(prod1, j);
+                    }
+                }
+                for (let j = 0; j < prod2.length; j++) {
+                    if (prod2[j].ref == itemCart[i]) {
+                        modalBody.innerHTML = modalBody.innerHTML + pushCartCard(prod2, j);
+                    }
+                }
+            }
+        }
     })
 
     .catch(function (err) {
         console.log('Fetch Error :-S', err);
     })
-// Fin Fonction d'Affichage
-
-// Ajouter un produit au Panier:
-
-
-// Fin Ajouter un produit au Panier
-
-// Display Panier:
-
-// Fin Display Panier
