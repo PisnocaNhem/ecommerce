@@ -9,4 +9,4 @@ let minQtyToRef = (ref) => {
     localStorage.setItem("basket", JSON.stringify(basket));
 };
 
-minQtyToRef();
+minQtyToRef("002");
