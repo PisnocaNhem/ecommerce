@@ -143,6 +143,7 @@ fetch('/assets/json/banque.json')
                     }
                 }
             }
+            
             let deleteBtn = document.querySelectorAll('.deleteBtn');
             deleteBtn.forEach(element => {
                 element.onclick = removeItem
