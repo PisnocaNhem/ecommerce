@@ -116,8 +116,8 @@ fetch('/assets/json/banque.json')
 
         const pushCartCard = (prod, i) => {
             let cartCard =
-                `<div class="col-12 py-3 d-flex justify-content-center">
-                <div class="card d-flex">
+                `<div class="col-12 py-3 d-flex">
+                <div class="cardCard d-flex">
                     <img src="${prod[i].imgSrc}" alt="${prod[i].title}">
                     <div class="card-body d-flex flex-column align-items-center">
                         <h5 class="card-title">${prod[i].title}</h5>

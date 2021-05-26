@@ -1,7 +1,3 @@
-.card {
-    width: 18rem;
-}
-
 .price {
   font-weight: 650;
 }
@@ -144,8 +140,15 @@ footer a{
   margin-bottom: 20px;
   margin-top: 20px;
   align-items: center;
+  width: 18rem;
 }
+
 .imgTest{
   height: 150px;
   width: 150px;
+} 
+.cardCard{
+  width: 100px;
+  height: 100px;
+  
 }
