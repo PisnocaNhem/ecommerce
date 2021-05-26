@@ -10,14 +10,15 @@ let refLS = localStorage.getItem('refLS');
         console.log(refLS)
         refLS.forEach( (element,index) => {
             if(element[0] == refToRemove){
-                refLS.splice(index,1);
-                document.location.reload();
+                refLS.delete(index,1);
+                
             }
         });
         
         localStorage.setItem('refLS',JSON.stringify(refLS))
         
     }
+    // document.location.reload();
 // fin micka supp
 
 
