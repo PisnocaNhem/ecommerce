@@ -13,16 +13,12 @@ const pushCard = (product, i) => {
     let card =
         `<div class="col-12 col-lg-3">
         <div class="card">
-            <img src="${product[i].imgSrc}" class="card-img-top" alt="${product[i].title}">
+        <div class="imgTest"> <img src="${product[i].imgSrc}" class="card-img-top" alt="${product[i].title}"></div>
             <div class="card-body">
                 <h5 class="card-title">${product[i].title}</h5>
-                <div class="d-flex">
-                    <h6>${product[i].ref}</h6>
-                    <span class="category">${product[i].category}
-                <p class="card-text">${product[i].subTitle}</p>
-                <span class="price">${product[i].price}€</span>
+                <div><span class="price">${product[i].price}€</span></div>
                 <button class="add btn btn-primary" data-ref="${product[i].ref}">Ajouter au panier</button>
-            </div>
+            
         </div>
     </div>`;
     return card;
@@ -130,7 +126,6 @@ fetch('/assets/json/banque.json')
                             <span class="category ps-3">${prod[i].category}
                         </div>
                         <div class="d-flex pt-2">
-                            <p class="card-text"><em>${prod[i].subTitle}</em></p>
                             <span class="price ps-5">${prod[i].price}€</span>
                         </div>
                         <div class="d-flex pb-2">
