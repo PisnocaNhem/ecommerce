@@ -10,3 +10,7 @@ let addQtyToRef = (ref) => {
 };
 
 addQtyToRef();
+
+let addBasket = document.querySelectorAll('.addBasket')
+    console.log(addBasket);
+    // element.onclick = (event) => 
