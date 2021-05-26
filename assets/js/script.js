@@ -145,7 +145,7 @@ fetch('/assets/json/banque.json')
                 </div>`;
             return cartCard
         }
-        let displayBasket = ()=>{}
+        
         cart.onclick = () => {
             modalBody.innerHTML = "";
             var refArray = JSON.parse(localStorage.getItem('refLS'));
