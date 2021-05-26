@@ -97,16 +97,25 @@ fetch('/assets/json/banque.json')
 
         const pushCartCard = (prod, i) => {
             let cartCard =
-                `<div class="col-12">
+                `<div class="col-12 py-3 d-flex justify-content-center">
                 <div class="card d-flex">
                     <img src="${prod[i].imgSrc}" alt="${prod[i].title}">
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column align-items-center">
                         <h5 class="card-title">${prod[i].title}</h5>
                         <div class="d-flex">
-                            <h6>${prod[i].ref}</h6>
-                            <span class="category">${prod[i].category}
-                        <p class="card-text">${prod[i].subTitle}</p>
-                        <span class="price">${prod[i].price}€</span>
+                            ${prod[i].ref}
+                            <span class="category ps-3">${prod[i].category}
+                        </div>
+                        <div class="d-flex pt-2">
+                            <p class="card-text"><em>${prod[i].subTitle}</em></p>
+                            <span class="price ps-5">${prod[i].price}€</span>
+                        </div>
+                        <div class="d-flex pb-2">
+                            <button class="-1">-</button>
+                            <span class="border">njnjnj</span>
+                            <button class="+1">+</button>
+                            <button class="deleteBtn ms-3">X</button>
+                        </div>
                         <button class="add btn btn-primary" data-ref="${prod[i].ref}">Ajouter au panier</button>
                     </div>
                 </div>
@@ -134,12 +143,22 @@ fetch('/assets/json/banque.json')
                     }
                 }
             }
+            // document.querySelectorAll('.-1').forEach(element => {
+            //     element.onclick = (event) => {
+
+            //     }
+            // })
+
+
+
+            // document.querySelectorAll('.+1')
         }
     })
 
     .catch(function (err) {
         console.log('Fetch Error :-S', err);
     })
+
 // Fin Fonction d'Affichage
 
 // Ajouter un produit au Panier:
