@@ -24,21 +24,27 @@ const pushCard = (product, i) => {
     return card;
 }
 
-const addQtyToRef = (ref) => {
+const addQtyToRef = (ref, count) => {
     let refArray = JSON.parse(localStorage.getItem('refLS'));
     refArray.forEach((element) => {
         if(element[0] == ref){
             element[1]++;
+            count.forEach(element2 => {
+                element2.innerHTML = element[1];
+            })
         }
     });
     localStorage.setItem('refLS', JSON.stringify(refArray));
 };
 
-const minQtyToRef = (ref) => {
+const minQtyToRef = (ref, count) => {
     let refArray = JSON.parse(localStorage.getItem('refLS'));
     refArray.forEach((element) => {
         if(element[0] == ref){
             element[1]--;
+            count.forEach(element2 => {
+                element2.innerHTML = element[1];
+            })
         }
     });
     localStorage.setItem('refLS', JSON.stringify(refArray));
@@ -119,7 +125,7 @@ fetch('/assets/json/banque.json')
         const prod2 = data.gender[2];
         const modalBody = document.querySelector('.modal-body');
 
-        const pushCartCard = (prod, i) => {
+        const pushCartCard = (prod, i, q) => {
             let cartCard =
                 `<div class="col-12 py-3 d-flex">
                     <div class="cardCard d-flex">
@@ -136,7 +142,7 @@ fetch('/assets/json/banque.json')
                             </div>
                             <div class="d-flex pb-2">
                                 <button data-ref="${prod[i].ref}" class="minBasket">-</button>
-                                <span data-ref="${prod[i].ref} class="border count"></span>
+                                <span data-ref="${prod[i].ref}" class="border count px-3">${q}</span>
                                 <button data-ref="${prod[i].ref}" class="addBasket">+</button>
                                 <button data-ref="${prod[i].ref}" class="deleteBtn ms-3">X</button>
                             </div>
@@ -152,20 +158,22 @@ fetch('/assets/json/banque.json')
             for (let i = 0; i < refArray.length; i++) {
                 for (let j = 0; j < prod0.length; j++) {
                     if (prod0[j].ref == refArray[i][0]) {
-                        modalBody.innerHTML = modalBody.innerHTML + pushCartCard(prod0, j);
+                        modalBody.innerHTML = modalBody.innerHTML + pushCartCard(prod0, j, refArray[i][1]);
                     }
                 }
                 for (let j = 0; j < prod1.length; j++) {
                     if (prod1[j].ref == refArray[i][0]) {
-                        modalBody.innerHTML = modalBody.innerHTML + pushCartCard(prod1, j);
+                        modalBody.innerHTML = modalBody.innerHTML + pushCartCard(prod1, j, refArray[i][1]);
                     }
                 }
                 for (let j = 0; j < prod2.length; j++) {
                     if (prod2[j].ref == refArray[i][0]) {
-                        modalBody.innerHTML = modalBody.innerHTML + pushCartCard(prod2, j);
+                        modalBody.innerHTML = modalBody.innerHTML + pushCartCard(prod2, j, refArray[i][1]);
                     }
                 }
             }
+
+            var count = document.querySelectorAll('.count');
             // debut micka
             let deleteBtn = document.querySelectorAll('.deleteBtn');
             deleteBtn.forEach(element => {
@@ -182,14 +190,12 @@ fetch('/assets/json/banque.json')
             document.querySelectorAll('.')
             document.querySelectorAll('.addBasket').forEach(element => {
                 element.onclick = (event) => {
-                    addQtyToRef(event.target.dataset.ref);
-                    
-
+                    addQtyToRef(event.target.dataset.ref, count);
                 }
             })
             document.querySelectorAll('.minBasket').forEach(element => {
                 element.onclick = (event) => {
-                    minQtyToRef(event.target.dataset.ref);
+                    minQtyToRef(event.target.dataset.ref, count);
                 }
             })
         }
