@@ -1,20 +1,23 @@
-    let basket = localStorage.getItem('basket');
+    let refLS = localStorage.getItem('refLS');
     
     let removeItem = (event) => {
         refToRemove = event.target.dataset.ref
         
-        basket = JSON.parse(basket);
-        console.log(basket)
-        basket.forEach( (element,index) => {
+        refLS = JSON.parse(refLS);
+        console.log(refLS)
+        refLS.forEach( (element,index) => {
             if(element[0] == refToRemove){
-                basket.splice(index,1);
+                refLS.splice(index,1);
+                document.location.reload();
             }
         });
         
-        localStorage.setItem('basket',JSON.stringify(basket))
+        localStorage.setItem('refLS',JSON.stringify(refLS))
         
-
     }
+
+
+
     // basket.forEach((element) => {
     //     if(element[0] == ref){
             
