@@ -1,5 +1,5 @@
 .price {
-  font-weight: 650;
+    font-weight: 650;
 }
 /* Debut Ludo */
 html, body{
@@ -20,7 +20,6 @@ html, body{
 .imgMens{
     background-image: url(/assets/img/imgmens.jpg);
     background-size: cover;
-
 }
 .womensDiv{
     height: 300px;
@@ -41,21 +40,20 @@ html, body{
 /* Fin Ludo */
 
 .card{
-  text-align: center;
-  width: 250px;
-  height: 250px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  align-items: center;
-  width: 18rem;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    align-items: center;
+    width: 18rem;
 }
 
 .imgTest{
-  height: 150px;
-  width: 150px;
+    height: 150px;
+    width: 150px;
 } 
 .cardCard{
-  width: 100px;
-  height: 100px;
-  
+    width: 100px;
+    height: 100px;
 }
