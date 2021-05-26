@@ -63,3 +63,8 @@ html, body{
   height: 100px;
   
 }
+
+a {
+  color: white;
+  text-decoration: none;
+}
