@@ -9,4 +9,4 @@ let addQtyToRef = (ref) => {
     localStorage.setItem("basket", JSON.stringify(basket));
 };
 
-addQtyToRef("001");
+addQtyToRef();
