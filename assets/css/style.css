@@ -22,7 +22,7 @@ html, body{
     background-color: #F2AF12;
 }
 .imgMens{
-    background-image: url(/assets/img/imgmens.jpg);
+    background-image: url(assets/img/imgmens.jpg);
     background-size: cover;
 
 }
@@ -31,7 +31,7 @@ html, body{
     background-color: #c74874;
 }
 .imgWomens{
-    background-image: url(/assets/img/imgwomens.jpg);
+    background-image: url(assets/img/imgwomens.jpg);
     background-size: cover;
 }
 .kidsDiv{
@@ -39,7 +39,7 @@ html, body{
     background-color: #DCEE6B;
 }
 .imgKids{
-    background-image: url(/assets/img/imgkids.jpg);
+    background-image: url(assets/img/imgkids.jpg);
     background-size: cover;
 }
 /* Fin Ludo */

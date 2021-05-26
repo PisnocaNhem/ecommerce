@@ -4,7 +4,7 @@
                 "ref": "001",
                 "title": "NikeTailleBasse",
                 "subTitle": "Nike1",
-                "imgSrc": "/assets/img/BDDimg/homme/h1.png",
+                "imgSrc": "../assets/img/BDDimg/homme/h1.png",
                 "imgAlt": "Paire de chaussure homme taille basse",
                 "price": "2000",
                 "category": "Homme"
@@ -13,7 +13,7 @@
                 "ref": "002",
                 "title": "NikeTailleHaute",
                 "subTitle": "Nike2",
-                "imgSrc": "/assets/img/BDDimg/homme/h2.png",
+                "imgSrc": "../assets/img/BDDimg/homme/h2.png",
                 "imgAlt": "Paire de chaussure homme taille haute",
                 "price": "3000",
                 "category": "Homme"
@@ -22,7 +22,7 @@
                 "ref": "003",
                 "title": "NikeTailleHaute",
                 "subTitle": "Nike1",
-                "imgSrc": "/assets/img/BDDimg/homme/h3.png",
+                "imgSrc": "../assets/img/BDDimg/homme/h3.png",
                 "imgAlt": "Paire de chaussure homme taille Haute en couleur rouge",
                 "price": "3000",
                 "category": "Homme"
@@ -31,7 +31,7 @@
                 "ref": "004",
                 "title": "Retour vers le futur",
                 "subTitle": "Nike4",
-                "imgSrc": "/assets/img/BDDimg/homme/h4.png",
+                "imgSrc": "../assets/img/BDDimg/homme/h4.png",
                 "imgAlt": "Repartez dans le futur chaussure auto laçante ",
                 "price": "23000",
                 "category": "Homme"
@@ -40,7 +40,7 @@
                 "ref": "005",
                 "title": "NikeTailleBasse",
                 "subTitle": "Nike5",
-                "imgSrc": "/assets/img/BDDimg/homme/h5.png",
+                "imgSrc": "../assets/img/BDDimg/homme/h5.png",
                 "imgAlt": "Paire de chaussure homme taille basse en couleur noire",
                 "price": "300",
                 "category": "Homme"
@@ -51,7 +51,7 @@
                 "ref": "006",
                 "title": "NikeTailleBasse",
                 "subTitle": "Nike6",
-                "imgSrc": "/assets/img/BDDimg/femme/f1.png",
+                "imgSrc": "../assets/img/BDDimg/femme/f1.png",
                 "imgAlt": "Paire de chaussure femme couleur marron",
                 "price": "2000",
                 "category": "femme"
@@ -60,7 +60,7 @@
                 "ref": "007",
                 "title": "NikeTailleHaute",
                 "subTitle": "Nike7",
-                "imgSrc": "/assets/img/BDDimg/femme/f2.png",
+                "imgSrc": "../assets/img/BDDimg/femme/f2.png",
                 "imgAlt": "Paire de chaussure femme taille basse multi couleur",
                 "price": "3000",
                 "category": "femme"
@@ -69,7 +69,7 @@
                 "ref": "008",
                 "title": "NikeTailleHaute",
                 "subTitle": "Nike8",
-                "imgSrc": "/assets/img/BDDimg/femme/f3.png",
+                "imgSrc": "../assets/img/BDDimg/femme/f3.png",
                 "imgAlt": "Paire de chaussure femme taille mi haute en couleur",
                 "price": "3000",
                 "category": "femme"
@@ -78,7 +78,7 @@
                 "ref": "009",
                 "title": "Retour vers le futur",
                 "subTitle": "Nike9",
-                "imgSrc": "/assets/img/BDDimg/femme/f4.png",
+                "imgSrc": "../assets/img/BDDimg/femme/f4.png",
                 "imgAlt": "Paire de chaussure femme taille basse en couleur rose",
                 "price": "23000",
                 "category": "femme"
@@ -87,7 +87,7 @@
                 "ref": "0010",
                 "title": "NikeTailleBasse",
                 "subTitle": "Nike10",
-                "imgSrc": "/assets/img/BDDimg/femme/f5.png",
+                "imgSrc": "../assets/img/BDDimg/femme/f5.png",
                 "imgAlt": "Paire de chaussure femme taille basse en couleur blanche",
                 "price": "300",
                 "category": "femme"
@@ -98,7 +98,7 @@
                 "ref": "011",
                 "title": "NikeTailleBasse",
                 "subTitle": "Nike11",
-                "imgSrc": "/assets/img/BDDimg/enfant/e1.png",
+                "imgSrc": "../assets/img/BDDimg/enfant/e1.png",
                 "imgAlt": "Paire de chaussure enfant couleur rose",
                 "price": "2000",
                 "category": "enfant"
@@ -107,7 +107,7 @@
                 "ref": "012",
                 "title": "NikeTailleHaute",
                 "subTitle": "Nike12",
-                "imgSrc": "/assets/img/BDDimg/enfant/e2.png",
+                "imgSrc": "../assets/img/BDDimg/enfant/e2.png",
                 "imgAlt": "Paire de chaussure enfant taille basse couelru noire",
                 "price": "3000",
                 "category": "enfant"
@@ -116,7 +116,7 @@
                 "ref": "013",
                 "title": "NikeTailleHaute",
                 "subTitle": "Nike13",
-                "imgSrc": "/assets/img/BDDimg/enfant/e3.png",
+                "imgSrc": "../assets/img/BDDimg/enfant/e3.png",
                 "imgAlt": "Paire de chaussure enfant taille basse couleur bleue",
                 "price": "3000",
                 "category": "enfant"
@@ -125,7 +125,7 @@
                 "ref": "014",
                 "title": "Retour vers le futur",
                 "subTitle": "Nike14",
-                "imgSrc": "/assets/img/BDDimg/enfant/e4.png",
+                "imgSrc": "../assets/img/BDDimg/enfant/e4.png",
                 "imgAlt": "Paire de chaussure enfant taille haute couleur blanche et grise",
                 "price": "23000",
                 "category": "enfant"
@@ -134,7 +134,7 @@
                 "ref": "0015",
                 "title": "NikeTailleBasse",
                 "subTitle": "Nike15",
-                "imgSrc": "/assets/img/BDDimg/enfant/e5.png",
+                "imgSrc": "../assets/img/BDDimg/enfant/e5.png",
                 "imgAlt": "Paire de chaussure enfant taille basse papillon",
                 "price": "300",
                 "category": "enfant"
