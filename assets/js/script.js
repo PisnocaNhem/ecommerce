@@ -28,6 +28,29 @@ const pushCard = (product, i) => {
     return card;
 }
 
+const addQtyToRef = (ref) => {
+    let basket = localStorage.getItem('basket');
+    basket = JSON.parse(basket);
+    basket.forEach((element) => {
+        if(element[0] == ref){
+            element[1]++;
+        }
+    });
+    localStorage.setItem("basket", JSON.stringify(basket));
+};
+
+const minQtyToRef = (ref) => {
+    let basket = localStorage.getItem('basket');
+    basket = JSON.parse(basket);
+    basket.forEach((element) => {
+        if(element[0] == ref){
+            element[1]--;
+        }
+    });
+    localStorage.setItem("basket", JSON.stringify(basket));
+    
+};
+
 fetch('/assets/json/banque.json')
     .then(response => response.json())
     .then(data => {
@@ -111,12 +134,11 @@ fetch('/assets/json/banque.json')
                             <span class="price ps-5">${prod[i].price}€</span>
                         </div>
                         <div class="d-flex pb-2">
-                            <button class="-1">-</button>
+                            <button data-ref="${prod[i].ref}" class="minBasket">-</button>
                             <span class="border">njnjnj</span>
-                            <button class="+1">+</button>
-                            <button class="deleteBtn ms-3">X</button>
+                            <button data-ref="${prod[i].ref}" class="addBasket">+</button>
+                            <button data-ref="${prod[i].ref}" class="deleteBtn ms-3">X</button>
                         </div>
-                        <button class="add btn btn-primary" data-ref="${prod[i].ref}">Ajouter au panier</button>
                     </div>
                 </div>
             </div>`;
@@ -143,15 +165,12 @@ fetch('/assets/json/banque.json')
                     }
                 }
             }
-            // document.querySelectorAll('.-1').forEach(element => {
-            //     element.onclick = (event) => {
+            document.querySelectorAll('.addBasket').forEach(element => {
+                element.onclick = (event) => {
+                    addQtyToRef(event.target.dataset.ref);
+                }
+            })
 
-            //     }
-            // })
-
-
-
-            // document.querySelectorAll('.+1')
         }
     })
 
