@@ -11,6 +11,21 @@ let basket = [
     console.log(JSON.stringify(basket));
     // [["001",1],["002",2],["003",3],["004",4]]
 
+    const modalbody = document.querySelector(".modal-body")
+    const cart = document.querySelector("#cart")
+    cart.onclick = () =>{
+        var items = cart.querySelectorAll(".add")
+        items.forEach(element =>{
+            element.onclick = (event)=>{
+                removeItem()
+            }
+        })
+    }
+
+
+
+// console.log(items)
+
 
 
     let deleteBtn = document.querySelectorAll('.deleteBtn');

@@ -107,7 +107,7 @@ fetch('/assets/json/banque.json')
                             <span class="category">${prod[i].category}
                         <p class="card-text">${prod[i].subTitle}</p>
                         <span class="price">${prod[i].price}€</span>
-                        <button class="add btn btn-primary" data-ref="${prod[i].ref}">Ajouter au panier</button>
+                        <button class="deleteBtn btn btn-primary" data-ref="${prod[i].ref}">Supprimer</button>
                     </div>
                 </div>
             </div>`;
