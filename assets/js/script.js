@@ -166,12 +166,12 @@ fetch('/assets/json/banque.json')
                     }
                 }
             }
-            
+            // debut micka
             let deleteBtn = document.querySelectorAll('.deleteBtn');
             deleteBtn.forEach(element => {
                 element.onclick = removeItem
                 });
-                
+            // fin micka
             
             // document.querySelectorAll('.-1').forEach(element => {
             //     element.onclick = (event) => {

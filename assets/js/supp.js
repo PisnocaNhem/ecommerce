@@ -1,4 +1,7 @@
-    let refLS = localStorage.getItem('refLS');
+
+// debut micka supp
+
+let refLS = localStorage.getItem('refLS');
     
     let removeItem = (event) => {
         refToRemove = event.target.dataset.ref
@@ -15,7 +18,7 @@
         localStorage.setItem('refLS',JSON.stringify(refLS))
         
     }
-
+// fin micka supp
 
 
     // basket.forEach((element) => {
