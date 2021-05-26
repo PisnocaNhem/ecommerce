@@ -25,26 +25,23 @@ const pushCard = (product, i) => {
 }
 
 const addQtyToRef = (ref) => {
-    let basket = localStorage.getItem('basket');
-    basket = JSON.parse(basket);
-    basket.forEach((element) => {
+    let refArray = JSON.parse(localStorage.getItem('refLS'));
+    refArray.forEach((element) => {
         if(element[0] == ref){
             element[1]++;
         }
     });
-    localStorage.setItem("basket", JSON.stringify(basket));
+    localStorage.setItem('refLS', JSON.stringify(refArray));
 };
 
 const minQtyToRef = (ref) => {
-    let basket = localStorage.getItem('basket');
-    basket = JSON.parse(basket);
-    basket.forEach((element) => {
+    let refArray = JSON.parse(localStorage.getItem('refLS'));
+    refArray.forEach((element) => {
         if(element[0] == ref){
             element[1]--;
         }
     });
-    localStorage.setItem("basket", JSON.stringify(basket));
-    
+    localStorage.setItem('refLS', JSON.stringify(refArray));
 };
 
 fetch('/assets/json/banque.json')
@@ -92,17 +89,25 @@ fetch('/assets/json/banque.json')
                 }
                 // Au clic sur un bouton "Ajouter au panier".
                 const add = document.querySelectorAll('.add');
-                var refArray = [];
-                add.forEach(element => {
-                    element.onclick = (event) => {
-                        if (!localStorage.getItem('refLS')) {
-                            refArray.push(event.target.dataset.ref);
-                            localStorage.setItem('refLS', JSON.stringify(refArray));
+                add.forEach(buttonElement => {
+                    buttonElement.onclick = (event) => {
+                        if(!localStorage.getItem('refLS')){
+                            var refArray = [];
+                            refArray.push([event.target.dataset.ref, 1]);
                         } else {
-                            refArray = JSON.parse(localStorage.getItem('refLS'));
-                            refArray.push(event.target.dataset.ref);
-                            localStorage.setItem('refLS', JSON.stringify(refArray));
+                            var refArray = JSON.parse(localStorage.getItem('refLS'));
+                            var updated = false;
+                            refArray.forEach(lSElement => {      
+                                if(lSElement[0] == event.target.dataset.ref) {
+                                    lSElement[1]++;
+                                    updated = true;
+                                }
+                            })
+                            if(!updated){
+                                refArray.push([event.target.dataset.ref, 1]);
+                            }
                         }
+                        localStorage.setItem('refLS', JSON.stringify(refArray));
                     }
                 })
             }
@@ -117,55 +122,63 @@ fetch('/assets/json/banque.json')
         const pushCartCard = (prod, i) => {
             let cartCard =
                 `<div class="col-12 py-3 d-flex">
-                <div class="cardCard d-flex">
-                    <img src="${prod[i].imgSrc}" alt="${prod[i].title}">
-                    <div class="card-body d-flex flex-column align-items-center">
-                        <h5 class="card-title">${prod[i].title}</h5>
-                        <div class="d-flex">
-                            ${prod[i].ref}
-                            <span class="category ps-3">${prod[i].category}
-                        </div>
-                        <div class="d-flex pt-2">
-                            <span class="price ps-5">${prod[i].price}€</span>
-                        </div>
-                        <div class="d-flex pb-2">
-                            <button data-ref="${prod[i].ref}" class="minBasket">-</button>
-                            <span class="border">njnjnj</span>
-                            <button data-ref="${prod[i].ref}" class="addBasket">+</button>
-                            <button data-ref="${prod[i].ref}" class="deleteBtn ms-3">X</button>
+                    <div class="cardCard d-flex">
+                        <img src="${prod[i].imgSrc}" alt="${prod[i].title}">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h5 class="card-title">${prod[i].title}</h5>
+                            <div class="d-flex">
+                                ${prod[i].ref}
+                                <span class="category ps-3">${prod[i].category}
+                            </div>
+                            <div class="d-flex pt-2">
+                                <p class="card-text"><em>${prod[i].subTitle}</em></p>
+                                <span class="price ps-5">${prod[i].price}€</span>
+                            </div>
+                            <div class="d-flex pb-2">
+                                <button data-ref="${prod[i].ref}" class="minBasket">-</button>
+                                <span data-ref="${prod[i].ref} class="border count"></span>
+                                <button data-ref="${prod[i].ref}" class="addBasket">+</button>
+                                <button data-ref="${prod[i].ref}" class="deleteBtn ms-3">X</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>`;
+                </div>`;
             return cartCard
         }
 
         cart.onclick = () => {
             modalBody.innerHTML = "";
-            var itemCart = JSON.parse(localStorage.getItem('refLS'));
-            for (let i = 0; i < itemCart.length; i++) {
+            var refArray = JSON.parse(localStorage.getItem('refLS'));
+            for (let i = 0; i < refArray.length; i++) {
                 for (let j = 0; j < prod0.length; j++) {
-                    if (prod0[j].ref == itemCart[i]) {
+                    if (prod0[j].ref == refArray[i][0]) {
                         modalBody.innerHTML = modalBody.innerHTML + pushCartCard(prod0, j);
                     }
                 }
                 for (let j = 0; j < prod1.length; j++) {
-                    if (prod1[j].ref == itemCart[i]) {
+                    if (prod1[j].ref == refArray[i][0]) {
                         modalBody.innerHTML = modalBody.innerHTML + pushCartCard(prod1, j);
                     }
                 }
                 for (let j = 0; j < prod2.length; j++) {
-                    if (prod2[j].ref == itemCart[i]) {
+                    if (prod2[j].ref == refArray[i][0]) {
                         modalBody.innerHTML = modalBody.innerHTML + pushCartCard(prod2, j);
                     }
                 }
             }
+            document.querySelectorAll('.')
             document.querySelectorAll('.addBasket').forEach(element => {
                 element.onclick = (event) => {
                     addQtyToRef(event.target.dataset.ref);
+                    
+
                 }
             })
-
+            document.querySelectorAll('.minBasket').forEach(element => {
+                element.onclick = (event) => {
+                    minQtyToRef(event.target.dataset.ref);
+                }
+            })
         }
     })
 
