@@ -1,6 +1,10 @@
 .card {
     width: 18rem;
 }
+
+.price {
+  font-weight: 650;
+}
 /* Debut Ludo */
 html, body{
     height: 100vh;
