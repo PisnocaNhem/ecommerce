@@ -85,7 +85,10 @@ html, body{
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-
+footer a{
+  text-decoration: none;
+  color : white;
+}
 
 /* Number text (1/3 etc) */
 .numbertext {
