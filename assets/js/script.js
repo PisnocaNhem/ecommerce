@@ -114,7 +114,7 @@ fetch('/assets/json/banque.json')
                             <button class="-1">-</button>
                             <span class="border">njnjnj</span>
                             <button class="+1">+</button>
-                            <button class="deleteBtn ms-3">X</button>
+                            <button class="deleteBtn ms-3" data-ref="${prod[i].ref}">X</button>
                         </div>
                         <button class="add btn btn-primary" data-ref="${prod[i].ref}">Ajouter au panier</button>
                     </div>
@@ -143,6 +143,13 @@ fetch('/assets/json/banque.json')
                     }
                 }
             }
+            let deleteBtn = document.querySelectorAll('.deleteBtn');
+            deleteBtn.forEach(element => {
+                element.onclick = removeItem
+                
+                
+            });
+            
             // document.querySelectorAll('.-1').forEach(element => {
             //     element.onclick = (event) => {
 

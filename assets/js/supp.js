@@ -11,30 +11,35 @@
 //     console.log(JSON.stringify(basket));
 //     // [["001",1],["002",2],["003",3],["004",4]]
 
-    const modalbody = document.querySelector(".modal-body")
-    const cartCard = document.querySelector("#cart")
-    cart.onclick = () =>{
-        var items = cart.querySelectorAll(".deleteBtn")
-        items.forEach(element =>{
-            element.onclick = (event)=>{
-                
-            }
-        })
-    }
-
-    let deleteBtn = document.querySelectorAll('.deleteBtn');
+    // const modalbody = document.querySelector(".modal-body")
+    // const cartCard = document.querySelector("#cart")
+    // cart.onclick = () =>{
+    //     var items = cart.querySelectorAll(".deleteBtn")
+    //     items.forEach(element =>{
+    //         element.onclick = (event)=>{
+    //             removeItem()
+    //         }
+    //     })
+    // }
+    let basket = localStorage.getItem('basket');
+    
     let removeItem = (event) => {
-        indexToRemove = event.target.dataset.ref
-        refLS.splice(indexToRemove);
-        localStorage.setItem('refLS',JSON.stringify(refLS))
+        refToRemove = event.target.dataset.ref
+        
+        basket = JSON.parse(basket);
+        console.log(basket)
+        basket.splice(refToRemove,2);
+        localStorage.setItem('basket',JSON.stringify(basket))
+        
     }
 
-    deleteBtn.forEach(element => {
-        element.onclick = removeItem
+    // deleteBtn.forEach(element => {
+    //     element.onclick = removeItem
         
-    });
+        
+    // });
     
-    
+    // console.log(deleteBtn)
 
     
 
