@@ -28,11 +28,23 @@
         
         basket = JSON.parse(basket);
         console.log(basket)
-        basket.splice(refToRemove,2);
+        basket.forEach( (element,index) => {
+            if(element[0] == refToRemove){
+                basket.splice(index,1);
+            }
+        });
+        
         localStorage.setItem('basket',JSON.stringify(basket))
         
-    }
 
+    }
+    // basket.forEach((element) => {
+    //     if(element[0] == ref){
+            
+    //     }
+    // });
+
+    
     // deleteBtn.forEach(element => {
     //     element.onclick = removeItem
         

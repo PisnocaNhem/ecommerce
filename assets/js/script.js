@@ -146,18 +146,14 @@ fetch('/assets/json/banque.json')
             let deleteBtn = document.querySelectorAll('.deleteBtn');
             deleteBtn.forEach(element => {
                 element.onclick = removeItem
+                });
                 
-                
-            });
             
             // document.querySelectorAll('.-1').forEach(element => {
             //     element.onclick = (event) => {
 
             //     }
             // })
-
-
-
             // document.querySelectorAll('.+1')
         }
     })
