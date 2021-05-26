@@ -2,6 +2,10 @@
     width: 18rem;
 }
 
+.count {
+  font-weight: bold;
+}
+
 .price {
   font-weight: 650;
 }
