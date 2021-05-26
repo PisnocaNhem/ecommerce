@@ -187,7 +187,7 @@ fetch('/assets/json/banque.json')
             //     }
             // })
             // document.querySelectorAll('.+1')
-            document.querySelectorAll('.')
+            
             document.querySelectorAll('.addBasket').forEach(element => {
                 element.onclick = (event) => {
                     addQtyToRef(event.target.dataset.ref, count);
