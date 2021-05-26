@@ -151,7 +151,7 @@ fetch('/assets/json/banque.json')
                 </div>`;
             return cartCard
         }
-
+        let displayBasket = ()=>{}
         cart.onclick = () => {
             modalBody.innerHTML = "";
             var refArray = JSON.parse(localStorage.getItem('refLS'));
@@ -174,6 +174,20 @@ fetch('/assets/json/banque.json')
             }
 
             var count = document.querySelectorAll('.count');
+            // debut micka
+            let deleteBtn = document.querySelectorAll('.deleteBtn');
+            deleteBtn.forEach(element => {
+                element.onclick = removeItem
+                });
+            // fin micka
+            
+            // document.querySelectorAll('.-1').forEach(element => {
+            //     element.onclick = (event) => {
+
+            //     }
+            // })
+            // document.querySelectorAll('.+1')
+            document.querySelectorAll('.')
             document.querySelectorAll('.addBasket').forEach(element => {
                 element.onclick = (event) => {
                     addQtyToRef(event.target.dataset.ref, count);
@@ -193,6 +207,8 @@ fetch('/assets/json/banque.json')
 
 // Fin Fonction d'Affichage
 
-// Ajouter un produit au Panier:
+// Ajouter un produit au Panier mickaël
+
+
 
 // Fin Ajouter un produit au Panier
