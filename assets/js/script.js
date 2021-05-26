@@ -50,7 +50,7 @@ const minQtyToRef = (ref, count) => {
     localStorage.setItem('refLS', JSON.stringify(refArray));
 };
 
-fetch('assets/json/banque.json')
+fetch('https://pisnocanhem.github.io/ecommerce/assets/json/banque.json')
     .then(response => response.json())
     .then(data => {
         display.forEach(element => {
